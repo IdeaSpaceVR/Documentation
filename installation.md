@@ -13,14 +13,12 @@
 
 Make sure your server meets the following requirements:
 
-<div class="content-list" markdown="1">
-- PHP >= 5.5.9
-- OpenSSL PHP Extension
-- PDO PHP Extension
-- Mbstring PHP Extension
-- Tokenizer PHP Extension
-- MySQL database (or Postgres / SQLite / SQL Server)
-</div>
+* PHP >= 5.5.9
+* OpenSSL PHP Extension
+* PDO PHP Extension
+* Mbstring PHP Extension
+* Tokenizer PHP Extension
+* MySQL database (or Postgres / SQLite / SQL Server)
 
 <a name="installing-ideaspace"></a>
 ### Installing IdeaSpace
