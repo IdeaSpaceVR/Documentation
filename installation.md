@@ -1,12 +1,8 @@
 # Installation
 
-- [Installation](#installation)
-    - [Server Requirements](#server-requirements)
-    - [Installing IdeaSpace](#installing-ideaspace)
-    - [Configuration](#configuration)
-
-<a name="installation"></a>
-## Installation
+- [Server Requirements](#server-requirements)
+- [Installing IdeaSpace](#installing-ideaspace)
+- [Configuration](#configuration)
 
 <a name="server-requirements"></a>
 ### Server Requirements
@@ -18,7 +14,11 @@ Make sure your server meets the following requirements:
 * PDO PHP Extension
 * Mbstring PHP Extension
 * Tokenizer PHP Extension
+* GD Library or Imagick PHP Extension
 * MySQL database (or Postgres / SQLite / SQL Server)
+* Apache web server (or NGINX)
+
+These PHP extensions are most likely pre-installed by your server hosting provider. In case of doubt, please ask your server administrator or contact your hosting provider.
 
 <a name="installing-ideaspace"></a>
 ### Installing IdeaSpace
@@ -34,6 +34,18 @@ Make sure your server meets the following requirements:
 4. Run the IdeaSpace installation script by accessing the URL in a web browser. This should be the URL where you uploaded the IdeaSpace files.
   * If you installed IdeaSpace in the root directory, you should visit: `http://www.example.com`
   * If you installed IdeaSpace in its own subdirectory called `vr` for example, you should visit: `http://example.com/vr`
+
+5. Database Connection. You have to enter information related to your database. If you do not have this information at hand, please contact your server administrator.
+
+  ![IdeaSpace Installation Database Configuration](/assets/documentation/images/ideaspace-installation-database-config.png "IdeaSpace Installation Database Configuration") {.img-responsive}
+
+  The `db_prefix` parameter is needed for multiple IdeaSpace installations sharing one database.
+
+6. Admin User Creation. Enter the username, e-mail address and password for the admin user of your installation. You will use the e-mail address and password to log in to IdeaSpace.
+
+  ![IdeaSpace Installation Admin User Creation](/assets/documentation/images/ideaspace-installation-admin-user-creation.png "IdeaSpace Installation Admin User Creation") {.img-responsive}
+
+  After this step you are requested to log in. That's it!
 
 <a name="configuration"></a>
 ### Configuration
