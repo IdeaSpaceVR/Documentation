@@ -15,3 +15,6 @@ Let's assume you want to change the text. Select `Spaces` and `All` from the men
 ![Getting Started IdeaSpace All Spaces](/assets/documentation/images/getting-started-ideaspace-all-spaces.png "Getting Started IdeaSpace All Spaces") {.img-responsive}
 
 That's it! You have just created a virtual reality space on the web!
+
+![Getting Started IdeaSpace Preview Space](/assets/documentation/images/getting-started-ideaspace-preview-space.png "Getting Started IdeaSpace Preview Space") {.img-responsive}
+

@@ -12,5 +12,5 @@
     - [API Hooks](/documentation/{{version}}/) 
 - Community
     - [Links](/documentation/{{version}}/community)
-    - [License](/documentation/{{version}}/license)
     - [Contributions](/documentation/{{version}}/contributions)
+    - [License](/documentation/{{version}}/license)
