@@ -6,6 +6,8 @@
 - [A-Frame Community Slack Channel](https://aframevr-slack.herokuapp.com)
 - [WebVR Community Slack Channel - Sign up](https://webvr-slack.herokuapp.com)
 - [WebVR Subreddit](https://www.reddit.com/r/webvr)
+- [WebVR Info](https://webvr.info/)
+- [MozVR](http://mozvr.com/)
 - [WebVR Mailing List](https://mail.mozilla.org/listinfo/web-vr-discuss)
 
 
