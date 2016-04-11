@@ -1,0 +1,84 @@
+.sidebar > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+article h1 + ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #f0f2f1;
+}
+
+ul > li > a,
+article h1 + ul > li > a {
+  color: #0080e5;
+}
+
+ul > li > a:hover,
+article h1 + ul > li > a:hover {
+  text-decoration: none;
+  color: #0080e5;
+}
+
+article ul, 
+article ol {
+  padding-left: 16px;
+}
+
+article h3 {
+  margin-top: 50px;
+}
+
+article h1,
+article h2, 
+article h3 {
+  font-weight: 300;
+  color: #000000;
+}
+
+article {
+  line-height: 24px;
+  color: rgb(82, 82, 82);
+}
+
+article p a {
+  text-decoration: underline;
+  color: #0080e5;
+}
+
+article p a:hover {
+  text-decoration: underline;
+  color: #0080e5;
+}
+
+.sidebar > ul > li {
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.sidebar > ul > li > ul {
+  border-top: 1px dashed rgba(0, 0, 0, 0.1);
+  display: block;
+  list-style: none;
+  margin: 10px 0 0 0;
+  padding: 10px 0 0 0;
+  font-size: 14px;
+}
+
+.sidebar > ul > li > ul > li {
+  margin: 5px 0 0 0;
+}
+
+
+.sidebar > ul > li > ul > li > a {
+  color: #0080e5;
+}
+
+.sidebar > ul > li > ul > li > a:hover {
+  text-decoration: none;
+  color: #0080e5;
+}
+
