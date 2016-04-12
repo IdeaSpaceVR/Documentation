@@ -14,3 +14,4 @@
     - [Links](/documentation/{{version}}/community)
     - [Contributions](/documentation/{{version}}/contributions)
     - [License](/documentation/{{version}}/license)
+    - [Blog](/blog)
