@@ -15,3 +15,4 @@
     - [Contributions](/documentation/{{version}}/contributions)
     - [License](/documentation/{{version}}/license)
     - [Blog](/blog)
+    - [Forum](https://forum.ideaspacevr.org)
