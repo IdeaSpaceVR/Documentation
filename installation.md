@@ -15,7 +15,7 @@ Make sure your server meets the following requirements:
 * Fileinfo PHP Extension
 * Mbstring PHP Extension
 * Tokenizer PHP Extension
-* GD Library or Imagick PHP Extension
+* GD Library or ImageMagick PHP Extension
 * MySQL database (or Postgres / SQLite / SQL Server)
 * Apache web server (or NGINX)
 
