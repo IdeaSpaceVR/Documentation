@@ -19,7 +19,7 @@ Make sure your server meets the following requirements:
 * MySQL database (or Postgres / SQLite / SQL Server)
 * Apache web server (or NGINX)
 
-These PHP extensions are most likely pre-installed by your server hosting provider. In case of doubt, please ask your server administrator or contact your hosting provider.
+These PHP extensions are most likely pre-installed by your server hosting provider. In case of doubt, please ask your server administrator or contact your hosting provider. Detailed installation instructions for specific hosting provider can be found in the <a href="https://forum.ideaspacevr.org/category/4/help" target="_blank">IdeaSpace Discussion Forum</a>.
 
 <a name="installing-ideaspace"></a>
 ### Installing IdeaSpace
