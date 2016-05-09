@@ -12,6 +12,7 @@ Make sure your server meets the following requirements:
 * PHP >= 5.5.9
 * OpenSSL PHP Extension
 * PDO PHP Extension
+* Fileinfo PHP Extension
 * Mbstring PHP Extension
 * Tokenizer PHP Extension
 * GD Library or Imagick PHP Extension
