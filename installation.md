@@ -35,7 +35,7 @@ These PHP extensions are most likely pre-installed by your server hosting provid
 4. Run the IdeaSpace installation script by accessing the URL in a web browser. This should be the URL where you uploaded the IdeaSpace files.
   * If you installed IdeaSpace in the root directory, you should visit: `http://www.example.com`
   * If you installed IdeaSpace in its own subdirectory called `vr` for example, you should visit: `http://example.com/vr`
-(If you encounter a 404 Not Found error and you are using Apache2 as a web server, please make sure that the <a href="https://forum.ideaspacevr.org/topic/11/404-not-found-error-during-installation" target="_blank">mod_rewrite module is enabled and configured</a>.)
+  * (If you encounter a 404 Not Found error and you are using Apache2 as a web server, please make sure that the <a href="https://forum.ideaspacevr.org/topic/11/404-not-found-error-during-installation" target="_blank">mod_rewrite module is enabled and configured</a>.)
 
 5. Database Connection. You have to enter information related to your database. If you do not have this information at hand, please contact your server administrator.
 
