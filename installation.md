@@ -17,7 +17,7 @@ Make sure your server meets the following requirements:
 * Tokenizer PHP Extension
 * GD Library or ImageMagick PHP Extension
 * MySQL database (or Postgres / SQLite / SQL Server)
-* Apache web server (or NGINX)
+* Apache web server (or NGINX) with mod_rewrite module enabled
 
 These PHP extensions are most likely pre-installed by your server hosting provider. In case of doubt, please ask your server administrator or contact your hosting provider. Detailed installation instructions for specific hosting provider can be found in the <a href="https://forum.ideaspacevr.org/category/4/help" target="_blank">IdeaSpace Discussion Forum</a>.
 
@@ -35,6 +35,7 @@ These PHP extensions are most likely pre-installed by your server hosting provid
 4. Run the IdeaSpace installation script by accessing the URL in a web browser. This should be the URL where you uploaded the IdeaSpace files.
   * If you installed IdeaSpace in the root directory, you should visit: `http://www.example.com`
   * If you installed IdeaSpace in its own subdirectory called `vr` for example, you should visit: `http://example.com/vr`
+(If you encounter a 404 Not Found error and you are using Apache2 as a web server, please make sure that the <a href="https://forum.ideaspacevr.org/topic/11/404-not-found-error-during-installation" target="_blank">mod_rewrite module is enabled and configured</a>.)
 
 5. Database Connection. You have to enter information related to your database. If you do not have this information at hand, please contact your server administrator.
 
