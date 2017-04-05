@@ -44,12 +44,14 @@ article {
   color: rgb(82, 82, 82);
 }
 
-article p a {
+article p a,
+article li a {
   text-decoration: underline;
   color: #0080e5;
 }
 
-article p a:hover {
+article p a:hover,
+article li a:hover {
   text-decoration: underline;
   color: #0080e5;
 }

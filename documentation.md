@@ -1,18 +1,15 @@
 - Setup
     - [Installation](/documentation/{{version}}/installation)
-    - [Virtual Reality Web / WebVR](/documentation/{{version}}/webvr)
-- User Tutorials
-    - [Getting Started: Hello World Theme](/documentation/{{version}}/getting-started)
-    - [Publish 360-Degree Photo Spheres](/documentation/{{version}}/360-degree-photo-spheres)
-    - [Download and Install VR Themes (coming soon!)](/documentation/{{version}}/) 
-- VR Theme Development (coming soon) 
+    - [Login](/documentation/{{version}}/login)
+    - [Configuration](/documentation/{{version}}/configuration)
+- User Tutorials (coming soon)
+    - [Create and Publish a Space](/documentation/{{version}}/)
+    - [Download and Install VR Themes](/documentation/{{version}}/) 
+- Developer Tutorials (coming soon)
+    - [VR Theme Boilerplate](/documentation/{{version}}/) 
     - [Theme File Structure](/documentation/{{version}}/) 
-    - [Controls](/documentation/{{version}}/) 
-    - [A-Frame](/documentation/{{version}}/) 
-    - [API Hooks](/documentation/{{version}}/) 
+    - [Field Types](/documentation/{{version}}/) 
 - Community
-    - [Links](/documentation/{{version}}/community)
     - [Contributions](/documentation/{{version}}/contributions)
     - [License](/documentation/{{version}}/license)
-    - [Blog](/blog)
-    - [Forum](https://forum.ideaspacevr.org)
+    - <a href="https://webvr.info">https://webvr.info</a>
