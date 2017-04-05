@@ -1,3 +1,3 @@
-[IdeaSpace Documentation](https://www.ideaspacevr.org/documentation)
+[IdeaSpaceVR Documentation](https://www.ideaspacevr.org/documentation)
 
 
