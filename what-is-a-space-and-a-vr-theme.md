@@ -1,8 +1,8 @@
-### What is a Space?
+# What is a Space?
 
-A space is a virtual reality (WebVR) scene which can be either viewed on a screen with your web browser or with a head mounted display in 3D. A space viewed on a screen can be shown in full-screen as well as embedded as part of a webpage.
+A space is a virtual reality (VR) website which can be either viewed on a screen with your web browser or with a head mounted display in 3D. A space viewed on a screen can be shown in full-screen as well as embedded as part of a webpage.
 
-### What is a VR Theme?
+# What is a VR Theme?
 
 A theme is a software package which defines what is shown in a virtual reality space and which type of content can be added. Types of content can be: images, text, etc. If you know Wordpress or other content management software then you are already familiar with the concept of themes.
 
