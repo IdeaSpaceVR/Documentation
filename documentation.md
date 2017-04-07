@@ -6,7 +6,7 @@
     - [What is a Space and a VR Theme?](/documentation/{{version}}/what-is-a-space-and-a-vr-theme)
     - [Create and Publish a Space](/documentation/{{version}}/create-publish-webvr-space)
     - [Embed your Space in a Website](/documentation/{{version}}/embed-space-website)
-    - [Download and Install a VR Theme](/documentation/{{version}}/) 
+    - [Install and Update VR Themes](/documentation/{{version}}/install-update-vr-themes) 
 - Developer Tutorials (coming soon)
     - [VR Theme Boilerplate](/documentation/{{version}}/) 
     - [Theme File Structure](/documentation/{{version}}/) 
