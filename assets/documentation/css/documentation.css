@@ -28,6 +28,10 @@ article ol {
   padding-left: 16px;
 }
 
+article ol li {
+  margin-bottom: 20px;
+}
+
 article h3 {
   margin-top: 50px;
 }
@@ -56,6 +60,16 @@ article li a:hover {
   color: #0080e5;
 }
 
+article ul,
+article ol,
+article p {
+  font-size: 15px;
+}
+
+article pre code {
+  font-size: 10px;
+}
+
 .sidebar > ul > li {
   font-size: 16px;
   margin-top: 40px;
@@ -67,7 +81,7 @@ article li a:hover {
   list-style: none;
   margin: 10px 0 0 0;
   padding: 10px 0 0 0;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 .sidebar > ul > li > ul > li {

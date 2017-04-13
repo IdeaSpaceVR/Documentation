@@ -2,16 +2,19 @@
     - [Installation](/documentation/{{version}}/installation)
     - [Login](/documentation/{{version}}/login)
     - [Configuration](/documentation/{{version}}/configuration)
-- User Tutorials 
+- User's Guide 
     - [What is a Space and a VR Theme?](/documentation/{{version}}/what-is-a-space-and-a-vr-theme)
     - [Create and Publish a Space](/documentation/{{version}}/create-publish-webvr-space)
     - [Embed your Space in a Website](/documentation/{{version}}/embed-space-website)
     - [Install and Update VR Themes](/documentation/{{version}}/install-update-vr-themes) 
-- Developer Tutorials (coming soon)
-    - [VR Theme Boilerplate](/documentation/{{version}}/) 
-    - [Theme File Structure](/documentation/{{version}}/) 
-    - [Field Types](/documentation/{{version}}/) 
-- Community
+- Developer's Guide
+    - [Building a Basic VR Theme](/documentation/{{version}}/building-basic-vr-theme) 
+    - [Content Types and Field Types (soon)](/documentation/{{version}}/content-types-and-field-types) 
+    - [Events (soon)](/documentation/{{version}}/events) 
+    - [Theme Configuration (soon)](/documentation/{{version}}/theme-configuration) 
+    - [Using Blade Templates (soon)](/documentation/{{version}}/) 
+    - [Using A-Frame (soon)](/documentation/{{version}}/) 
+- Misc
     - [Contributions](/documentation/{{version}}/contributions)
     - [License](/documentation/{{version}}/license)
     - <a href="https://webvr.info">https://webvr.info</a>
