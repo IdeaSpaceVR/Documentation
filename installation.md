@@ -28,7 +28,7 @@ These PHP extensions are most likely pre-installed by your server hosting provid
 
 1. Download and unzip the IdeaSpace package.
 
-2. Create a database for IdeaSpaceVR on your web server as well as a MySQL (or your preferred database) user who has all privileges for accessing and modifying it.
+2. Create a database for IdeaSpaceVR on your server as well as a database user who has all privileges for accessing and modifying its tables.
 
 3. Upload the IdeaSpaceVR files to the desired location on your web server.
   * If you want to have your IdeaSpaceVR installation in the root of your domain (e.g. `https://www.example.com`), move or upload all contents of the unzipped IdeaSpaceVR directory (excluding the IdeaSpaceVR directory itself) into the root directory of your web server.
