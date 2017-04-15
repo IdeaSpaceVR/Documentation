@@ -13,7 +13,9 @@ We are going to build a basic VR Theme which you can use with your IdeaSpaceVR i
 
 <iframe width="100%" height="300" allowfullscreen frameborder="0" src="https://www.ideaspacevr.org/theme-preview/starter-theme"></iframe>
 
-This theme shows some text which is animated and the text is managed by IdeaSpaceVR. For the theme development you can use a local IdeaSpaceVR installation (on your PC, using <a href="https://www.mamp.info/en/" target="_blank">MAMP</a>) and a text editor. <a href="https://www.ideaspacevr.org/download" target="_blank">Download the latest IdeaSpaceVR release here</a>. After installing IdeaSpaceVR, extract and copy the Starter Theme files into your `/themes` directory. It should look like that: `/themes/starter-theme`. 
+This theme shows some text which is animated and the text is managed by IdeaSpaceVR. For the theme development you can use a local IdeaSpaceVR installation (on your PC, using <a href="https://www.mamp.info/en/" target="_blank">MAMP</a>) and a text editor. <a href="https://www.ideaspacevr.org/download" target="_blank">Download the latest IdeaSpaceVR release here</a>. 
+
+After installing IdeaSpaceVR, extract and copy the Starter Theme files into your `/themes` directory. It should look like that: `/themes/starter-theme`. 
 
 
 <a name="directory-strucuture"></a>
@@ -193,33 +195,36 @@ The text content can be retrieved by using this statement: `{{ $message['message
 
 By looping through the PHP array, we generate an `a-text` entity and assign the text value to the value parameter of the entity. How A-Frame works is not part of this guide. A-Frame offers <a href="https://aframe.io/docs" target="_blank">an excellent documentation online</a>.
 
-    @extends('theme::index')
+```
+@extends('theme::index')
 
-    @section('title', $space_title)
+  @section('title', $space_title)
 
-    @section('scene')
+  @section('scene')
 
-    <a-scene>
+  <a-scene>
 
-      @include('theme::assets')
+    @include('theme::assets')
 
-      <a-entity layout="type: line; margin: 1.4" position="-2.4 -1 0" rotation="-60 0 90">
+    <a-entity layout="type: line; margin: 1.4" position="-2.4 -1 0" rotation="-60 0 90">
 
-      @foreach ($content['messages'] as $message)
+    @foreach ($content['messages'] as $message)
 
-          <a-text position="0 0 0" rotation="0 0 -90" color="#ffd536" value="{{ $message['message-text']['#value'] }}"></a-text>
+        <a-text position="0 0 0" rotation="0 0 -90" color="#ffd536" value="{{ $message['message-text']['#value'] }}"></a-text>
 
-      @endforeach
+    @endforeach
 
-          <a-animation attribute="position" to="-2.4 50 -100" dur="700000" easing="linear"></a-animation>
+    <a-animation attribute="position" to="-2.4 50 -100" dur="700000" easing="linear">
+    </a-animation>
 
-      </a-entity>
+    </a-entity>
 
-      <a-sky color="#000000"></a-sky>
+    <a-sky color="#000000"></a-sky>
 
-    </a-scene>
+  </a-scene>
 
-    @endsection 
+@endsection
+```
 
 These are the basic concepts of building a VR Theme. Preview the <a href="https://www.ideaspacevr.org/theme-preview/starter-theme" target="_blank">Starter Theme in fullscreen here</a>.
 

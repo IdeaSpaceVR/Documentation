@@ -7,11 +7,13 @@
     - [Create and Publish a Space](/documentation/{{version}}/create-publish-webvr-space)
     - [Embed your Space in a Website](/documentation/{{version}}/embed-space-website)
     - [Install and Update VR Themes](/documentation/{{version}}/install-update-vr-themes) 
+    - [Position and Attach Items in Space (soon)](/documentation/{{version}}/) 
 - Developer's Guide
     - [Building a Basic VR Theme](/documentation/{{version}}/building-basic-vr-theme) 
-    - [Content Types and Field Types (soon)](/documentation/{{version}}/content-types-and-field-types) 
+    - [Content Types and Field Types](/documentation/{{version}}/content-types-and-field-types) 
+    - [Theme Configuration File (soon)](/documentation/{{version}}/theme-configuration-file) 
+    - [View Template Variables (soon)](/documentation/{{version}}/) 
     - [Events (soon)](/documentation/{{version}}/events) 
-    - [Theme Configuration (soon)](/documentation/{{version}}/theme-configuration) 
     - [Using Blade Templates (soon)](/documentation/{{version}}/) 
     - [Using A-Frame (soon)](/documentation/{{version}}/) 
 - Misc
