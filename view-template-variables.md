@@ -1,104 +1,139 @@
-`$content['your-content-type-name'][0]['your-textfield-name']['#id']`
-`$content['your-content-type-name'][0]['your-textfield-name']['#content-id']`
-`$content['your-content-type-name'][0]['your-textfield-name']['#type']`
-`$content['your-content-type-name'][0]['your-textfield-name']['#value']`
+# View Template Variables
 
-`$content['your-content-type-name'][0]['your-textarea-name']['#id']`
-`$content['your-content-type-name'][0]['your-textarea-name']['#content-id']`
-`$content['your-content-type-name'][0]['your-textarea-name']['#type']`
-`$content['your-content-type-name'][0]['your-textarea-name']['#value']`
+- [View Templates](#view-templates)
+- [JavaScript and JSON](#javascript-json)
 
-`$content['your-content-type-name'][0]['your-image-field-name']['#id']`
-`$content['your-content-type-name'][0]['your-image-field-name']['#content-id']`
-`$content['your-content-type-name'][0]['your-image-field-name']['#type']`
-`$content['your-content-type-name'][0]['your-image-field-name']['#caption']`
-`$content['your-content-type-name'][0]['your-image-field-name']['#description']`
-`$content['your-content-type-name'][0]['your-image-field-name']['#width']`
-`$content['your-content-type-name'][0]['your-image-field-name']['#height']`
-`$content['your-content-type-name'][0]['your-image-field-name']['#uri']['#value']`
+<a name="view-templates"></a>
+### View Templates
 
-`$content['your-content-type-name'][0]['your-photosphere-field-name']['#id']`
-`$content['your-content-type-name'][0]['your-photosphere-field-name']['#content-id']`
-`$content['your-content-type-name'][0]['your-photosphere-field-name']['#type']`
-`$content['your-content-type-name'][0]['your-photosphere-field-name']['#caption']`
-`$content['your-content-type-name'][0]['your-photosphere-field-name']['#description']`
-`$content['your-content-type-name'][0]['your-photosphere-field-name']['#width']`
-`$content['your-content-type-name'][0]['your-photosphere-field-name']['#height']`
-`$content['your-content-type-name'][0]['your-photosphere-field-name']['#uri']['#value']`
+The following variables are exposed in the view templates (`index.blade.php`, `assets.blade.php`, `scene.blade.php`).
 
-`$content['your-content-type-name'][0]['your-audio-field-name']['#id']`
-`$content['your-content-type-name'][0]['your-audio-field-name']['#content-id']`
-`$content['your-content-type-name'][0]['your-audio-field-name']['#type']`
-`$content['your-content-type-name'][0]['your-audio-field-name']['#caption']`
-`$content['your-content-type-name'][0]['your-audio-field-name']['#description']`
-`$content['your-content-type-name'][0]['your-audio-field-name']['#duration']`
-`$content['your-content-type-name'][0]['your-audio-field-name']['#uri']['#value']`
+<table class="table table-bordered">
+<thead>
+<tr>
+<th>Variable</th><td>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>$space_url</td><td>The URL used for this space.</td>
+</tr>
+<tr>
+  <td>$space_title</td><td>The title of this space.</td>
+</tr>
+<tr>
+  <td>$origin_trial_token</td><td>Origin Trial Token for enabling WebVR in Chrome browsers.</td>
+</tr>
+<tr>
+  <td>$theme_dir</td><td>The directory path of the active theme for this space.</td>
+</tr>
+<tr>
+  <td>$theme_view</td><td>The name of the theme view. Default value is: scene.</td>
+</tr>
+<tr>
+  <td>$content</td><td>Content variable containing all content type and field related data entered by the user. A detailed description of field type $content array structures <a href="content-types-and-field-types">can be found here</a>.</td>
+</tbody>
+</table>
 
-`$content['your-content-type-name'][0]['your-video-field-name']['#id']`
-`$content['your-content-type-name'][0]['your-video-field-name']['#content-id']`
-`$content['your-content-type-name'][0]['your-video-field-name']['#type']`
-`$content['your-content-type-name'][0]['your-video-field-name']['#caption']`
-`$content['your-content-type-name'][0]['your-video-field-name']['#description']`
-`$content['your-content-type-name'][0]['your-video-field-name']['#width']`
-`$content['your-content-type-name'][0]['your-video-field-name']['#height']`
-`$content['your-content-type-name'][0]['your-video-field-name']['#duration']`
-`$content['your-content-type-name'][0]['your-video-field-name']['#uri']['#value']`
+Example: `$content` variable structure for field type `textfield`: 
 
-`$content['your-content-type-name'][0]['your-videosphere-field-name']['#id']`
-`$content['your-content-type-name'][0]['your-videosphere-field-name']['#content-id']`
-`$content['your-content-type-name'][0]['your-videosphere-field-name']['#type']`
-`$content['your-content-type-name'][0]['your-videosphere-field-name']['#caption']`
-`$content['your-content-type-name'][0]['your-videosphere-field-name']['#description']`
-`$content['your-content-type-name'][0]['your-videosphere-field-name']['#width']`
-`$content['your-content-type-name'][0]['your-videosphere-field-name']['#height']`
-`$content['your-content-type-name'][0]['your-videosphere-field-name']['#duration']`
-`$content['your-content-type-name'][0]['your-videosphere-field-name']['#uri']['#value']`
+```
+@foreach ($content['your-content-type-key'] as $textfield)
 
-`$content['your-content-type-name'][0]['your-color-field-name']['#id']`
-`$content['your-content-type-name'][0]['your-color-field-name']['#content-id']`
-`$content['your-content-type-name'][0]['your-color-field-name']['#type']`
-`$content['your-content-type-name'][0]['your-color-field-name']['#value']`
+  {{ $textfield['your-textfield-key']['#id'] }}
+  {{ $textfield['your-textfield-key']['#content-id'] }}
+  {{ $textfield['your-textfield-key']['#type'] }}
+  {{ $textfield['your-textfield-key']['#value'] }}
 
-`$content['your-content-type-name'][0]['your-date-field-name']['#id']`
-`$content['your-content-type-name'][0]['your-date-field-name']['#content-id']`
-`$content['your-content-type-name'][0]['your-date-field-name']['#type']`
-`$content['your-content-type-name'][0]['your-date-field-name']['#value']`
+@endforeach
+```
 
-`$content['your-content-type-name'][0]['your-options-select-field-name']['#id']`
-`$content['your-content-type-name'][0]['your-options-select-field-name']['#content-id']`
-`$content['your-content-type-name'][0]['your-options-select-field-name']['#type']`
-`$content['your-content-type-name'][0]['your-options-select-field-name']['#value']`
+Example: `$content` variable structure for field type `photosphere`:
 
-`$content['your-content-type-name'][0]['your-3d-model-field-name']['#id']`
-`$content['your-content-type-name'][0]['your-3d-model-field-name']['#content-id']`
-`$content['your-content-type-name'][0]['your-3d-model-field-name']['#type']`
-`$content['your-content-type-name'][0]['your-3d-model-field-name']['#caption']`
-`$content['your-content-type-name'][0]['your-3d-model-field-name']['#description']`
-`$content['your-content-type-name'][0]['your-3d-model-field-name']['#scale']`
-`$content['your-content-type-name'][0]['your-3d-model-field-name']['#rotation']`
-`$content['your-content-type-name'][0]['your-3d-model-field-name']['#model'][0]['#uri']['#value']`
-`$content['your-content-type-name'][0]['your-3d-model-field-name']['#model'][0]['#uri']['#filetype']`
-`$content['your-content-type-name'][0]['your-3d-model-field-name']['#model'][1]['#uri']['#value']`
-`$content['your-content-type-name'][0]['your-3d-model-field-name']['#model'][1]['#uri']['#filetype']`
+```
+@foreach ($content['your-content-type-key'] as $photosphere)
 
-`$content['your-content-type-name'][0]['your-position-field-name']['#id']`
-`$content['your-content-type-name'][0]['your-position-field-name']['#content-id']`
-`$content['your-content-type-name'][0]['your-position-field-name']['#type']`
-`$content['your-content-type-name'][0]['your-position-field-name']['#positions'][0]['#scale']['#x']`
-`$content['your-content-type-name'][0]['your-position-field-name']['#positions'][0]['#scale']['#y']`
-`$content['your-content-type-name'][0]['your-position-field-name']['#positions'][0]['#scale']['#z']`
-`$content['your-content-type-name'][0]['your-position-field-name']['#positions'][0]['#rotation']['#x']`
-`$content['your-content-type-name'][0]['your-position-field-name']['#positions'][0]['#rotation']['#y']`
-`$content['your-content-type-name'][0]['your-position-field-name']['#positions'][0]['#rotation']['#z']`
-`$content['your-content-type-name'][0]['your-position-field-name']['#positions'][0]['#position']['#x']`
-`$content['your-content-type-name'][0]['your-position-field-name']['#positions'][0]['#position']['#y']`
-`$content['your-content-type-name'][0]['your-position-field-name']['#positions'][0]['#position']['#z']`
-`$content['your-content-type-name'][0]['your-position-field-name']['#positions'][0]['#content-id']`
+  {{ $photosphere['your-photosphere-key']['#id'] }}
+  {{ $photosphere['your-photosphere-key']['#content-id'] }}
+  {{ $photosphere['your-photosphere-key']['#type'] }}
+  {{ $photosphere['your-photosphere-key']['#caption'] }}
+  {{ $photosphere['your-photosphere-key']['#description'] }}
+  {{ $photosphere['your-photosphere-key']['#width'] }}
+  {{ $photosphere['your-photosphere-key']['#height'] }}
+  {{ $photosphere['your-photosphere-key']['#uri']['#value'] }}
 
-`$content['your-content-type-name'][0]['your-position-field-name']['#positions'][...]['#content-id']`
+@endforach
+```
+
+Example: `$content` variable structure for field type `position`:
+
+```
+@foreach ($content['your-content-type-key'] as $position)
+
+  {{ $position['your-position-key']['#id'] }}
+  {{ $position['your-position-key']['#content-id'] }}
+  {{ $position['your-position-key']['#type'] }}
+
+  @foreach ($position['your-position-key']['#positions'] as $position_item)
+
+    {{ $position_item['#scale']['#x'] }}
+    {{ $position_item['#scale']['#y'] }}
+    {{ $position_item['#scale']['#z'] }}
+    {{ $position_item['#rotation']['#x'] }}
+    {{ $position_item['#rotation']['#y'] }}
+    {{ $position_item['#rotation']['#z'] }}
+    {{ $position_item['#position']['#x'] }}
+    {{ $position_item['#position']['#y'] }}
+    {{ $position_item['#position']['#z'] }}
+    {{ $position_item['#position']['#content-id'] }}
+
+  @endforeach
+
+@endforeach
+```
 
 
+<a name="javascript-json"></a>
+### JavaScript and JSON 
 
+The view template variables are exposed via JavaScript and JSON as well. Example: you want to load assets in an A-Frame component.
+
+```
+<a-entity
+  load-assets="url:{{ $space_url }}/content/your-content-type-key?per-page=3&page=1"
+</a-entity>
+```
+
+`load-assets` is an A-Frame component with `url` as a parameter which returns a JSON structure. IdeaSpaceVR uses pagination in order to return chuncks of content. `per-page` parameter defines how many items should be returned 'per page'. `page` parameter defines at which page number we want to start the pagination.
+
+In the `load-assets` component you can iterate through the JSON result. The JavaScript structure is the same structure as exposed in the view templates.
+
+```
+init: function() {
+
+  this.xmlhttp = new XMLHttpRequest();
+  this.xmlhttp.onreadystatechange = this.responseHandler.bind(this);
+
+  /* this.data.url contains the URL as shown in the example above */
+  this.xmlhttp.open('GET', this.data.url, true);
+
+  this.xmlhttp.send();
+
+},
+
+responseHandler: function() {
+
+  var obj = JSON.parse(this.xmlhttp.responseText);
+
+  for (var i=0; i<obj['your-content-type-key'].length; i++) {
+
+    var img = new Image();
+    img.src = obj['your-content-type-key'][i]['your-photosphere-key']['#uri']['#value'];
+
+  }
+
+}
+```
 
 
 
