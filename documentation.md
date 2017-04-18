@@ -14,8 +14,6 @@
     - [View Template Variables (incl. JS / JSON)](/documentation/{{version}}/view-template-variables) 
     - [Theme Configuration File (soon)](/documentation/{{version}}/theme-configuration-file) 
     - [Events (soon)](/documentation/{{version}}/events) 
-    - [Using Blade Templates (soon)](/documentation/{{version}}/) 
-    - [Using A-Frame (soon)](/documentation/{{version}}/) 
 - Misc
     - [Contributions](/documentation/{{version}}/contributions)
     - [License](/documentation/{{version}}/license)
