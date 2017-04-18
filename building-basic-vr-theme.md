@@ -4,6 +4,7 @@
 - [Directory Structure of the Starter Theme](#directory-strucuture)
 - [Theme Configuration (config.php)](#theme-configuration)
 - [View Templates](#view-templates)
+- [Debugging](#debugging)
 
 
 <a name="getting-started"></a>
@@ -229,4 +230,12 @@ By looping through the PHP array, we generate an `a-text` entity and assign the 
 These are the basic concepts of building a VR Theme. Preview the <a href="https://www.ideaspacevr.org/theme-preview/starter-theme" target="_blank">Starter Theme in fullscreen here</a>.
 
 
+<a name="debugging"></a>
+### Debugging
+
+If you worked on your theme and you would like to install it in your IdeaSpaceVR installation, but it does not appear in the list of themes, you have most likely a wrong configuration parameter in your `config.php` file. 
+
+In order to locate the issue, go to your IdeaSpaceVR web root directory and open the log file `/storage/logs/laravel.log`. You will find useful information in the file which helps you debugging your `config.php` file. 
+
+ 
 
