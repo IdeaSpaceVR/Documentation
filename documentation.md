@@ -13,7 +13,7 @@
     - [Content Types and Field Types](/documentation/{{version}}/content-types-and-field-types) 
     - [View Template Variables (incl. JS / JSON)](/documentation/{{version}}/view-template-variables) 
     - [Theme Configuration File](/documentation/{{version}}/theme-configuration-file) 
-    - [Events (soon)](/documentation/{{version}}/events) 
+    - [Events](/documentation/{{version}}/events) 
 - Misc
     - [Contributions](/documentation/{{version}}/contributions)
     - [License](/documentation/{{version}}/license)
