@@ -12,7 +12,7 @@
     - [Building a Basic VR Theme](/documentation/{{version}}/building-basic-vr-theme) 
     - [Content Types and Field Types](/documentation/{{version}}/content-types-and-field-types) 
     - [View Template Variables (incl. JS / JSON)](/documentation/{{version}}/view-template-variables) 
-    - [Theme Configuration File (soon)](/documentation/{{version}}/theme-configuration-file) 
+    - [Theme Configuration File](/documentation/{{version}}/theme-configuration-file) 
     - [Events (soon)](/documentation/{{version}}/events) 
 - Misc
     - [Contributions](/documentation/{{version}}/contributions)
