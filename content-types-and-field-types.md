@@ -879,12 +879,14 @@ Position array keys for getting content in a View Template (for example: `scene.
   <td>#description</td><td>Description Text</td>
 </tr>
 <tr>
-  <td>#positions</td><td>Array entries for positioned content items with key value pairs for #scale, #rotation and #content-id.</td>
+  <td>#positions</td><td>Array entries for positioned content items with key value pairs for #position (#x, #y, #z), #scale (#x, #y, #z), #rotation (#x, #y, #z), #content-id and referenced #content with its corresponding values.</td>
 </tr>
 </tbody>
 </table>
 
 Example:
+
+`$content['content-type-key'][0]['position-key']['#positions'][0]['#position']['#x']`
 
 `$content['content-type-key'][0]['position-key']['#positions'][0]['#position']['#y']`
 
@@ -892,7 +894,7 @@ Example:
 
 `$content['content-type-key'][0]['position-key']['#positions'][0]['#content-id']`
 
-`$content['content-type-key'][0]['position-key']['#positions'][..]['#content-id']`
+`$content['content-type-key'][0]['position-key']['#positions'][..]['#position']['#x']`
 
 
 
