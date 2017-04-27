@@ -1,4 +1,4 @@
-## Field Type Reference
+## Field Types
 
 Use this reference for setting up your content type(s) and fields in your theme's `config.php` file. Additionally it shows how to access field content in view templates by accessing  the `$content` theme variable.
 
