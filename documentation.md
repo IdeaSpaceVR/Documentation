@@ -11,6 +11,7 @@
 - Developer's Guide
     - [Building a Basic VR Theme](/documentation/{{version}}/building-basic-vr-theme) 
     - [Content Types and Field Types](/documentation/{{version}}/content-types-and-field-types) 
+    - [Field Type Reference](/documentation/{{version}}/field-type-reference) 
     - [View Template Variables (incl. JS / JSON)](/documentation/{{version}}/view-template-variables) 
     - [Theme Configuration File](/documentation/{{version}}/theme-configuration-file) 
     - [Events](/documentation/{{version}}/events) 
