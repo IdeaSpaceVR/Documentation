@@ -110,7 +110,7 @@ Renders as a HTML text area. If the `#contentformat` is `html/text`, selected te
   <td>#required</td><td>true or false</td><td>Boolean</td><td>yes</td>
 </tr>
 <tr>
-  <td>#rows</td><td>Between '1' and '20'</td><td>String</td><td>yes</td>
+  <td>#rows</td><td>Between 1 and 20</td><td>Number</td><td>yes</td>
 </tr>
 <tr>
   <td>#maxlength</td><td>Between 1 and 524288</td><td>Integer</td><td>yes</td>
