@@ -17,9 +17,9 @@ Make sure your server meets the following requirements:
 * GD Library or ImageMagick PHP Extension
 * MySQL database (or MariaDB / Postgres)
 * Apache web server (or NGINX) with mod_rewrite module enabled
-* HTTPS protocol recommended
+* HTTPS protocol
 
-Using the HTTPS protocol is recommended. 
+Using the HTTPS protocol is strongly recommended. In fact, it is needed in order to automatically switch your web browser into WebVR mode. 
 
 These PHP extensions are most likely pre-installed by your server hosting provider. In case of doubt, please ask your server administrator or contact your hosting provider. Detailed installation instructions for specific hosting provider can be found in the <a href="https://forum.ideaspacevr.org/category/4/help" target="_blank">IdeaSpaceVR Forum</a>.
 
