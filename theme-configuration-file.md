@@ -63,10 +63,30 @@ The theme configuration file `config.php` is central to a theme. It contains con
 
   ![IdeaSpaceVR - Building Basic VR Theme](/assets/documentation/images/building-basic-vr-theme-1.png "IdeaSpaceVR - Building Basic VR Theme") {.img-responsive}
 
-  The theme configuration file (`config.php`) can define one or many content types. And each content type can define one or many fields. Each field is described by a `#type` and other parameters. Take a look at <a href="field-type-reference">Content Types and Field Types</a> which lists all available fields and types.
+  The theme configuration file (`config.php`) can define one or many content types. And each content type can define one or many fields. Each field is described by a `#type` and other parameters. Take a look at <a href="field-type-reference">Field Type Reference</a> which lists all available fields and types.
 
 
-
+<table class="table table-bordered">
+<thead>
+<tr>
+  <th>Setting</th><th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>#label</td><td>Label of the content type.</td>
+</tr>
+<tr>
+  <td>#description</td><td>The description of the content type.</td>
+</tr>
+<tr>
+  <td>#max-values</td><td>How many items of this content type can be created. Possible values are 'infinite' or a number.</td>
+</tr>
+<tr>
+  <td>#fields</td><td>Fields configuration. See <a href="field-type-reference">Field Type Reference</a>.</td>
+</tr>
+</tbody>
+</table>
 
 
 <a name="example-ideaspace-360-theme"></a>
