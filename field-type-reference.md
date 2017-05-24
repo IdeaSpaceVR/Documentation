@@ -799,6 +799,15 @@ Example:
 
 `$content['content-type-key'][0]['model-key']['#model'][0]['#uri']['#filetype']` 
 
+Example for `obj` and `mtl` files:
+
+`$content['content-type-key'][0]['model-key']['#model'][0]['#uri']['#value']`
+
+`$content['content-type-key'][0]['model-key']['#model'][1]['#uri']['#value']`
+
+`$content['content-type-key'][0]['model-key']['#model'][0]['#uri']['#filetype']`
+
+`$content['content-type-key'][0]['model-key']['#model'][1]['#uri']['#filetype']`
 
 
 
