@@ -897,5 +897,15 @@ Example:
 
 `$content['content-type-key'][0]['position-key']['#positions'][..]['#position']['#x']`
 
+Example: a reference to an image has been positioned:
 
+`$content['content-type-key'][0]['position-key']['#positions'][0]['#content']['image-key']['#width']`
+
+`$content['content-type-key'][0]['position-key']['#positions'][0]['#content']['image-key']['#height']`
+
+`$content['content-type-key'][0]['position-key']['#positions'][0]['#content']['image-key']['#caption']`
+
+`$content['content-type-key'][0]['position-key']['#positions'][0]['#content']['image-key']['#description']`
+
+`$content['content-type-key'][0]['position-key']['#positions'][0]['#content']['image-key']['#uri']['#value']`
 
