@@ -37,7 +37,7 @@ Renders as a HTML text input field. If the `#contentformat` is `html/text`, sele
   <td>#label</td><td>'Write some text'</td><td>String</td><td>yes</td>
 </tr>
 <tr>
-  <td>#description</td><td>'Write some text'</td><td>String</td><td>yes</td>
+  <td>#description</td><td>'Write some text'. Rendered as placeholder.</td><td>String</td><td>yes</td>
 </tr>
 <tr>
   <td>#required</td><td>true or false</td><td>Boolean</td><td>yes</td>
@@ -49,12 +49,12 @@ Renders as a HTML text input field. If the `#contentformat` is `html/text`, sele
   <td>#contentformat</td><td>'html/text' or 'text'</td><td>String</td><td>yes</td>
 </tr>
 <tr>
-  <td>#help</td><td>'Write some text'</td><td>String</td><td>no</td>
+  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>no</td>
 </tr>
 </tbody>
 </table>
 
-Textfield array keys for getting content in a View Template (for example: `scene.blade.php`):
+Textfield array keys for accessing content in a View Template (for example: `scene.blade.php`):
  
 <table class="table table-bordered">
 <thead>
@@ -104,7 +104,7 @@ Renders as a HTML text area. If the `#contentformat` is `html/text`, selected te
   <td>#label</td><td>'Write some text'</td><td>String</td><td>yes</td>
 </tr>
 <tr>
-  <td>#description</td><td>'Write some text'</td><td>String</td><td>yes</td>
+  <td>#description</td><td>'Write some text'. Rendered as placeholder.</td><td>String</td><td>yes</td>
 </tr>
 <tr>
   <td>#required</td><td>true or false</td><td>Boolean</td><td>yes</td>
@@ -119,12 +119,12 @@ Renders as a HTML text area. If the `#contentformat` is `html/text`, selected te
   <td>#contentformat</td><td>'html/text' or 'text'</td><td>String</td><td>yes</td>
 </tr>
 <tr>
-  <td>#help</td><td>'Write some text'</td><td>String</td><td>no</td>
+  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>no</td>
 </tr>
 </tbody>
 </table>
 
-Textarea array keys for getting content in a View Template (for example: `scene.blade.php`):
+Textarea array keys for accessing content in a View Template (for example: `scene.blade.php`):
  
 <table class="table table-bordered">
 <thead>
@@ -174,7 +174,7 @@ Renders as an image upload button. It opens the Assets dialog window in order to
   <td>#label</td><td>'Write some text'</td><td>String</td><td>yes</td>
 </tr>
 <tr>
-  <td>#description</td><td>'Write some text'</td><td>String</td><td>yes</td>
+  <td>#description</td><td>'Write some text'. Rendered as placeholder.</td><td>String</td><td>yes</td>
 </tr>
 <tr>
   <td>#required</td><td>true or false</td><td>Boolean</td><td>yes</td>
@@ -183,12 +183,12 @@ Renders as an image upload button. It opens the Assets dialog window in order to
   <td>#file-extension</td><td>['jpg', 'png']</td><td>Array</td><td>yes</td>
 </tr>
 <tr>
-  <td>#help</td><td>'Write some text'</td><td>String</td><td>no</td>
+  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>no</td>
 </tr>
 </tbody>
 </table>
 
-Image array keys for getting content in a View Template (for example: `scene.blade.php`):
+Image array keys for accessing content in a View Template (for example: `scene.blade.php`):
  
 <table class="table table-bordered">
 <thead>
@@ -250,7 +250,7 @@ Renders as an photo sphere upload button. It opens the Assets dialog window in o
   <td>#label</td><td>'Write some text'</td><td>String</td><td>yes</td>
 </tr>
 <tr>
-  <td>#description</td><td>'Write some text'</td><td>String</td><td>yes</td>
+  <td>#description</td><td>'Write some text'. Rendered as placeholder.</td><td>String</td><td>yes</td>
 </tr>
 <tr>
   <td>#required</td><td>true or false</td><td>Boolean</td><td>yes</td>
@@ -259,12 +259,12 @@ Renders as an photo sphere upload button. It opens the Assets dialog window in o
   <td>#file-extension</td><td>['jpg', 'png']</td><td>Array</td><td>yes</td>
 </tr>
 <tr>
-  <td>#help</td><td>'Write some text'</td><td>String</td><td>no</td>
+  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>no</td>
 </tr>
 </tbody>
 </table>
 
-Photosphere array keys for getting content in a View Template (for example: `scene.blade.php`):
+Photosphere array keys for accessing content in a View Template (for example: `scene.blade.php`):
  
 <table class="table table-bordered">
 <thead>
@@ -326,7 +326,7 @@ Renders as an audio file upload button. It opens the Assets dialog window in ord
   <td>#label</td><td>'Write some text'</td><td>String</td><td>yes</td>
 </tr>
 <tr>
-  <td>#description</td><td>'Write some text'</td><td>String</td><td>yes</td>
+  <td>#description</td><td>'Write some text'. Rendered as placeholder.</td><td>String</td><td>yes</td>
 </tr>
 <tr>
   <td>#required</td><td>true or false</td><td>Boolean</td><td>yes</td>
@@ -335,12 +335,12 @@ Renders as an audio file upload button. It opens the Assets dialog window in ord
   <td>#file-extension</td><td>['mp3', 'wav']</td><td>Array</td><td>yes</td>
 </tr>
 <tr>
-  <td>#help</td><td>'Write some text'</td><td>String</td><td>no</td>
+  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>no</td>
 </tr>
 </tbody>
 </table>
 
-Audio array keys for getting content in a View Template (for example: `scene.blade.php`):
+Audio array keys for accessing content in a View Template (for example: `scene.blade.php`):
  
 <table class="table table-bordered">
 <thead>
@@ -399,7 +399,7 @@ Renders as a video file upload button. It opens the Assets dialog window in orde
   <td>#label</td><td>'Write some text'</td><td>String</td><td>yes</td>
 </tr>
 <tr>
-  <td>#description</td><td>'Write some text'</td><td>String</td><td>yes</td>
+  <td>#description</td><td>'Write some text'. Rendered as placeholder.</td><td>String</td><td>yes</td>
 </tr>
 <tr>
   <td>#required</td><td>true or false</td><td>Boolean</td><td>yes</td>
@@ -408,12 +408,12 @@ Renders as a video file upload button. It opens the Assets dialog window in orde
   <td>#file-extension</td><td>['mp4']</td><td>Array</td><td>yes</td>
 </tr>
 <tr>
-  <td>#help</td><td>'Write some text'</td><td>String</td><td>no</td>
+  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>no</td>
 </tr>
 </tbody>
 </table>
 
-Video array keys for getting content in a View Template (for example: `scene.blade.php`):
+Video array keys for accessing content in a View Template (for example: `scene.blade.php`):
  
 <table class="table table-bordered">
 <thead>
@@ -478,7 +478,7 @@ Renders as a video sphere file upload button. It opens the Assets dialog window 
   <td>#label</td><td>'Write some text'</td><td>String</td><td>yes</td>
 </tr>
 <tr>
-  <td>#description</td><td>'Write some text'</td><td>String</td><td>yes</td>
+  <td>#description</td><td>'Write some text'. Rendered as placeholder.</td><td>String</td><td>yes</td>
 </tr>
 <tr>
   <td>#required</td><td>true or false</td><td>Boolean</td><td>yes</td>
@@ -487,12 +487,12 @@ Renders as a video sphere file upload button. It opens the Assets dialog window 
   <td>#file-extension</td><td>['mp4']</td><td>Array</td><td>yes</td>
 </tr>
 <tr>
-  <td>#help</td><td>'Write some text'</td><td>String</td><td>no</td>
+  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>no</td>
 </tr>
 </tbody>
 </table>
 
-Videosphere array keys for getting content in a View Template (for example: `scene.blade.php`):
+Videosphere array keys for accessing content in a View Template (for example: `scene.blade.php`):
  
 <table class="table table-bordered">
 <thead>
@@ -557,18 +557,18 @@ Renders as an HTML color selector input field. Possible color settings for `conf
   <td>#label</td><td>'Write some text'</td><td>String</td><td>yes</td>
 </tr>
 <tr>
-  <td>#description</td><td>'Write some text'</td><td>String</td><td>yes</td>
+  <td>#description</td><td>'Write some text'. Rendered as placeholder.</td><td>String</td><td>yes</td>
 </tr>
 <tr>
   <td>#required</td><td>true or false</td><td>Boolean</td><td>yes</td>
 </tr>
 <tr>
-  <td>#help</td><td>'Write some text'</td><td>String</td><td>no</td>
+  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>no</td>
 </tr>
 </tbody>
 </table>
 
-Color array keys for getting content in a View Template (for example: `scene.blade.php`):
+Color array keys for accessing content in a View Template (for example: `scene.blade.php`):
  
 <table class="table table-bordered">
 <thead>
@@ -618,18 +618,18 @@ Renders as an HTML date selector input field. Possible date settings for `config
   <td>#label</td><td>'Write some text'</td><td>String</td><td>yes</td>
 </tr>
 <tr>
-  <td>#description</td><td>'Write some text'</td><td>String</td><td>yes</td>
+  <td>#description</td><td>'Write some text'. Rendered as placeholder.</td><td>String</td><td>yes</td>
 </tr>
 <tr>
   <td>#required</td><td>true or false</td><td>Boolean</td><td>yes</td>
 </tr>
 <tr>
-  <td>#help</td><td>'Write some text'</td><td>String</td><td>no</td>
+  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>no</td>
 </tr>
 </tbody>
 </table>
 
-Date array keys for getting content in a View Template (for example: `scene.blade.php`):
+Date array keys for accessing content in a View Template (for example: `scene.blade.php`):
  
 <table class="table table-bordered">
 <thead>
@@ -679,7 +679,7 @@ Renders as an HTML select input field. Possible options select settings for `con
   <td>#label</td><td>'Write some text'</td><td>String</td><td>yes</td>
 </tr>
 <tr>
-  <td>#description</td><td>'Write some text'</td><td>String</td><td>yes</td>
+  <td>#description</td><td>'Write some text'. Rendered as placeholder.</td><td>String</td><td>yes</td>
 </tr>
 <tr>
   <td>#required</td><td>true or false</td><td>Boolean</td><td>yes</td>
@@ -688,12 +688,12 @@ Renders as an HTML select input field. Possible options select settings for `con
   <td>#options</td><td>['red' => 'Red', 'green' => 'Green', 'blue' => 'Blue']</td><td>Array</td><td>yes</td>
 </tr>
 <tr>
-  <td>#help</td><td>'Write some text'</td><td>String</td><td>no</td>
+  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>no</td>
 </tr>
 </tbody>
 </table>
 
-Options Select array keys for getting content in a View Template (for example: `scene.blade.php`):
+Options Select array keys for accessing content in a View Template (for example: `scene.blade.php`):
  
 <table class="table table-bordered">
 <thead>
@@ -743,7 +743,7 @@ Renders as a 3D model upload button. It opens the Assets dialog window in order 
   <td>#label</td><td>'Write some text'</td><td>String</td><td>yes</td>
 </tr>
 <tr>
-  <td>#description</td><td>'Write some text'</td><td>String</td><td>yes</td>
+  <td>#description</td><td>'Write some text'. Rendered as placeholder.</td><td>String</td><td>yes</td>
 </tr>
 <tr>
   <td>#required</td><td>true or false</td><td>Boolean</td><td>yes</td>
@@ -752,12 +752,12 @@ Renders as a 3D model upload button. It opens the Assets dialog window in order 
   <td>#file-extension</td><td>['obj', 'ply', 'dae']</td><td>Array</td><td>yes</td>
 </tr>
 <tr>
-  <td>#help</td><td>'Write some text'</td><td>String</td><td>no</td>
+  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>no</td>
 </tr>
 </tbody>
 </table>
 
-3D Model array keys for getting content in a View Template (for example: `scene.blade.php`):
+3D Model array keys for accessing content in a View Template (for example: `scene.blade.php`):
  
 <table class="table table-bordered">
 <thead>
@@ -830,7 +830,7 @@ Renders as a button. It opens a dialog window in order to position, attach and d
   <td>#label</td><td>'Write some text'</td><td>String</td><td>yes</td>
 </tr>
 <tr>
-  <td>#description</td><td>'Write some text'</td><td>String</td><td>yes</td>
+  <td>#description</td><td>'Write some text'. Rendered as placeholder.</td><td>String</td><td>yes</td>
 </tr>
 <tr>
   <td>#required</td><td>true or false</td><td>Boolean</td><td>yes</td>
@@ -845,7 +845,7 @@ Renders as a button. It opens a dialog window in order to position, attach and d
   <td>#field-reference</td><td>'name-of-field'</td><td>String</td><td>no</td>
 </tr>
 <tr>
-  <td>#help</td><td>'Write some text'</td><td>String</td><td>no</td>
+  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>no</td>
 </tr>
 </tbody>
 </table>
@@ -855,7 +855,7 @@ Renders as a button. It opens a dialog window in order to position, attach and d
 `#field-reference` specifies WHERE content items should be positioned and attached. The field name must exist in your theme (in `config.php` file) and within the same content type as the `position` field is in use. Examples for field references are: photo-sphere, video-sphere, 3d-model, etc. `#field-reference` is optional. If it is not specified, a grid is shown instead. 
 
 
-Position array keys for getting content in a View Template (for example: `scene.blade.php`):
+Position array keys for accessing content in a View Template (for example: `scene.blade.php`):
  
 <table class="table table-bordered">
 <thead>
