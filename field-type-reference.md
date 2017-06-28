@@ -565,6 +565,9 @@ Renders as an HTML color selector input field. Possible color settings for `conf
 <tr>
   <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>no</td>
 </tr>
+<tr>
+  <td>#default_value</td><td>'#FF0000'. Color value.</td><td>String</td><td>no</td>
+</tr>
 </tbody>
 </table>
 
