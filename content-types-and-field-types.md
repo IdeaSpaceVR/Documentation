@@ -6,3 +6,4 @@ Both, the text field and the image upload field are part of the content type `bl
 
 A VR Theme can define one or many content types in its configuration file `config.php`.
 
+A detailed list of all field types can be found <a href="field-type-reference">here</a>.
