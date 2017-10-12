@@ -49,7 +49,7 @@ Renders as a HTML text input field. If the `#contentformat` is `html/text`, sele
   <td>#contentformat</td><td>'html/text' or 'text'</td><td>String</td><td>yes</td>
 </tr>
 <tr>
-  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>no</td>
+  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>yes</td>
 </tr>
 </tbody>
 </table>
@@ -119,7 +119,7 @@ Renders as a HTML text area. If the `#contentformat` is `html/text`, selected te
   <td>#contentformat</td><td>'html/text' or 'text'</td><td>String</td><td>yes</td>
 </tr>
 <tr>
-  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>no</td>
+  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>yes</td>
 </tr>
 </tbody>
 </table>
@@ -183,7 +183,7 @@ Renders as an image upload button. It opens the Assets dialog window in order to
   <td>#file-extension</td><td>['jpg', 'png']</td><td>Array</td><td>yes</td>
 </tr>
 <tr>
-  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>no</td>
+  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>yes</td>
 </tr>
 </tbody>
 </table>
@@ -259,7 +259,7 @@ Renders as an photo sphere upload button. It opens the Assets dialog window in o
   <td>#file-extension</td><td>['jpg', 'png']</td><td>Array</td><td>yes</td>
 </tr>
 <tr>
-  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>no</td>
+  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>yes</td>
 </tr>
 </tbody>
 </table>
@@ -335,7 +335,7 @@ Renders as an audio file upload button. It opens the Assets dialog window in ord
   <td>#file-extension</td><td>['mp3', 'wav']</td><td>Array</td><td>yes</td>
 </tr>
 <tr>
-  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>no</td>
+  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>yes</td>
 </tr>
 </tbody>
 </table>
@@ -408,7 +408,7 @@ Renders as a video file upload button. It opens the Assets dialog window in orde
   <td>#file-extension</td><td>['mp4']</td><td>Array</td><td>yes</td>
 </tr>
 <tr>
-  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>no</td>
+  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>yes</td>
 </tr>
 </tbody>
 </table>
@@ -487,7 +487,7 @@ Renders as a video sphere file upload button. It opens the Assets dialog window 
   <td>#file-extension</td><td>['mp4']</td><td>Array</td><td>yes</td>
 </tr>
 <tr>
-  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>no</td>
+  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>yes</td>
 </tr>
 </tbody>
 </table>
@@ -563,7 +563,7 @@ Renders as an HTML color selector input field. Possible color settings for `conf
   <td>#required</td><td>true or false</td><td>Boolean</td><td>yes</td>
 </tr>
 <tr>
-  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>no</td>
+  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>yes</td>
 </tr>
 <tr>
   <td>#default_value</td><td>'#FF0000'. Color value.</td><td>String</td><td>no</td>
@@ -627,7 +627,7 @@ Renders as an HTML date selector input field. Possible date settings for `config
   <td>#required</td><td>true or false</td><td>Boolean</td><td>yes</td>
 </tr>
 <tr>
-  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>no</td>
+  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>yes</td>
 </tr>
 </tbody>
 </table>
@@ -691,7 +691,7 @@ Renders as an HTML select input field. Possible options select settings for `con
   <td>#options</td><td>['red' => 'Red', 'green' => 'Green', 'blue' => 'Blue']</td><td>Array</td><td>yes</td>
 </tr>
 <tr>
-  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>no</td>
+  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>yes</td>
 </tr>
 </tbody>
 </table>
@@ -755,7 +755,7 @@ Renders as a 3D model upload button. It opens the Assets dialog window in order 
   <td>#file-extension</td><td>['obj', 'ply', 'dae']</td><td>Array</td><td>yes</td>
 </tr>
 <tr>
-  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>no</td>
+  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>yes</td>
 </tr>
 </tbody>
 </table>
@@ -848,7 +848,7 @@ Renders as a button. It opens a dialog window in order to position, attach and d
   <td>#field-reference</td><td>'name-of-field'</td><td>String</td><td>no</td>
 </tr>
 <tr>
-  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>no</td>
+  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>yes</td>
 </tr>
 </tbody>
 </table>
