@@ -73,7 +73,6 @@ After installing IdeaSpaceVR, extract and copy the Starter Theme files into your
       '#theme-author-email' => 'info@ideaspacevr.org',
       '#theme-homepage' => 'https://www.ideaspacevr.org/themes',
       '#theme-keywords' => 'starter theme, simple',
-      '#theme-compatibility' => 'Google Cardboard, Daydream, Oculus, Samsung Gear VR, no headset',
       '#theme-view' => 'scene',
 
       '#content-types' => [

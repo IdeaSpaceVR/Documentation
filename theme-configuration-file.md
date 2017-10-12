@@ -47,9 +47,6 @@ The theme configuration file `config.php` is central to a theme. It contains con
   <td>#theme-keywords</td><td>Keywords, comma separated. Example: 'photo sphere, gaze input navigation, mobile, 360, photography'.</td>
 </tr>
 <tr>
-  <td>#theme-compatibility</td><td>Comma separated HMDs. Example: 'Google Cardboard, Daydream, Oculus, Samsung Gear VR, no headset'.</td>
-</tr>
-<tr>
   <td>#theme-view</td><td>The main view template file. Example: 'scene' which translates to scene.blade.php.</td>
 </tr>
 </tbody>
@@ -104,7 +101,6 @@ return [
   '#theme-author-email' => 'info@ideaspacevr.org',
   '#theme-homepage' => 'https://www.ideaspacevr.org/themes',
   '#theme-keywords' => 'photo sphere, gaze input navigation, mobile, 360, photography',
-  '#theme-compatibility' => 'Google Cardboard, Daydream, Oculus, Samsung Gear VR, no headset',
   '#theme-view' => 'scene',
 
   '#content-types' => [
