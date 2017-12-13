@@ -19,7 +19,7 @@ Make sure your server meets the following requirements:
 * Apache web server (or NGINX) with mod_rewrite module enabled
 * HTTPS protocol
 
-Using the HTTPS protocol is strongly recommended. In fact, it is needed in order to automatically switch your web browser into WebVR mode. 
+Using the HTTPS protocol is strongly recommended. In fact, it is needed if you want to use WebVR in a web browser. 
 
 These PHP extensions are most likely pre-installed by your server hosting provider. In case of doubt, please ask your server administrator or contact your hosting provider. Detailed installation instructions for specific hosting provider can be found in the <a href="https://forum.ideaspacevr.org/category/4/help" target="_blank">IdeaSpaceVR Forum</a>.
 
