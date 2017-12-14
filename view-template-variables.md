@@ -135,6 +135,13 @@ responseHandler: function() {
 }
 ```
 
+You can also load content by using the content id. For example, loading space content with id 12:
+
+```
+<a-entity
+  load-assets="url:{{ $space_url }}/content-id/12"
+</a-entity>
+```
 
 
 
