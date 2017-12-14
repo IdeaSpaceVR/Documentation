@@ -14,6 +14,8 @@ Use this reference for setting up your content type(s) and fields in your theme'
 - [Options Select](#options-select)
 - [3D Model](#3dmodel)
 - [Position](#position)
+- [Rotation](#rotation)
+- [Space Reference](#space-reference)
 
 
 
@@ -693,6 +695,9 @@ Renders as an HTML select input field. Possible options select settings for `con
 <tr>
   <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>yes</td>
 </tr>
+<tr>
+  <td>#default_value</td><td>'green'. Key value from #options.</td><td>String</td><td>no</td>
+</tr>
 </tbody>
 </table>
 
@@ -833,9 +838,6 @@ Renders as a button. It opens a dialog window in order to position, attach and d
   <td>#label</td><td>'Write some text'</td><td>String</td><td>yes</td>
 </tr>
 <tr>
-  <td>#description</td><td>'Write some text'. Rendered as placeholder.</td><td>String</td><td>yes</td>
-</tr>
-<tr>
   <td>#required</td><td>true or false</td><td>Boolean</td><td>yes</td>
 </tr>
 <tr>
@@ -911,4 +913,136 @@ Example: a reference to an image has been positioned:
 `$content['content-type-key'][0]['position-key']['#positions'][0]['#content']['image-key']['#description']`
 
 `$content['content-type-key'][0]['position-key']['#positions'][0]['#content']['image-key']['#uri']['#value']`
+
+
+
+<a name="rotation"></a>
+### Rotation 
+
+Renders as a button. It opens a dialog window in order to rotate content items (of a certain content type). The content rotation can be inserted into a space. Possible rotation settings for `config.php`:
+
+<table class="table table-bordered">
+<thead>
+<tr>
+  <th>Setting</th><th>Value(s)</th><th>Value Type</th><th>Mandatory</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>#type</td><td>'rotation'</td><td>String</td><td>yes</td>
+</tr>
+<tr>
+  <td>#label</td><td>'Write some text'</td><td>String</td><td>yes</td>
+</tr>
+<tr>
+  <td>#required</td><td>true or false</td><td>Boolean</td><td>yes</td>
+</tr>
+<tr>
+  <td>#field-reference</td><td>'name-of-field'</td><td>String</td><td>yes</td>
+</tr>
+<tr>
+  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>yes</td>
+</tr>
+</tbody>
+</table>
+
+`#field-reference` specifies the field name on which to enable the setting of a rotation. The field name must exist in your theme (in `config.php` file) and within the same content type as the `rotation` field is in use. Supported field types are: `video`, `videosphere`, `photosphere`, `image`, `model3d`.
+
+
+Rotation array keys for accessing content in a View Template (for example: `scene.blade.php`):
+ 
+<table class="table table-bordered">
+<thead>
+<tr>
+  <th>Array Key</th><th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>#id</td><td>Field ID Number</td>
+</tr>
+<tr>
+  <td>#content-id</td><td>Content ID Number</td>
+</tr>
+<tr>
+  <td>#type</td><td>'rotation'</td>
+</tr>
+<tr>
+  <td>#rotation</td><td>Array entries with key value pairs for rotation (#x, #y, #z).</td>
+</tr>
+</tbody>
+</table>
+
+Example:
+
+`$content['content-type-key'][0]['rotation-key']['#rotation']['#x']`
+
+`$content['content-type-key'][0]['rotation-key']['#rotation']['#y']`
+
+`$content['content-type-key'][0]['rotation-key']['#rotation']['#z']`
+
+
+<a name="space-reference"></a>
+### Space Reference
+
+Renders as an HTML select input field. Possible space reference settings for `config.php`:
+
+<table class="table table-bordered">
+<thead>
+<tr>
+  <th>Setting</th><th>Value(s)</th><th>Value Type</th><th>Mandatory</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>#type</td><td>'space-reference'</td><td>String</td><td>yes</td>
+</tr>
+<tr>
+  <td>#label</td><td>'Write some text'</td><td>String</td><td>yes</td>
+</tr>
+<tr>
+  <td>#required</td><td>true or false</td><td>Boolean</td><td>yes</td>
+</tr>
+<tr>
+  <td>#published</td><td>true or false. List only published spaces or all spaces.</td><td>String</td><td>yes</td>
+</tr>
+<tr>
+  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>yes</td>
+</tr>
+</tbody>
+</table>
+
+Space Reference array keys for accessing content in a View Template (for example: `scene.blade.php`):
+ 
+<table class="table table-bordered">
+<thead>
+<tr>
+  <th>Array Key</th><th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>#id</td><td>Field ID Number</td>
+</tr>
+<tr>
+  <td>#content-id</td><td>Content ID Number</td>
+</tr>
+<tr>
+  <td>#type</td><td>'space-reference'</td>
+</tr>
+<tr>
+  <td>#space-title</td><td>The space title</td>
+</tr>
+<tr>
+  <td>#space-uri</td><td>The space URI</td>
+</tr>
+<tr>
+  <td>#space-id</td><td>The space id</td>
+</tr>
+</tbody>
+</table>
+
+Example:
+
+`$content['content-type-key'][0]['space-reference-key']['#space-title']`
 
