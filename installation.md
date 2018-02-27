@@ -26,7 +26,7 @@ These PHP extensions are most likely pre-installed by your server hosting provid
 <a name="installing-ideaspace"></a>
 ### Installing IdeaSpaceVR
 
-1. Download and unzip the IdeaSpace package.
+1. <a href="/download">Download</a> and unzip the IdeaSpace package.
 
 2. Create a database for IdeaSpaceVR on your server as well as a database user who has all privileges for accessing and modifying its tables.
 
