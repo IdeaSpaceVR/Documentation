@@ -61,7 +61,7 @@ After installing IdeaSpaceVR, extract and copy the Starter Theme files into your
 
 <a name="theme-configuration"></a>
 ### Theme Configuration (config.php)
-
+```
     return [
 
       '#theme-name' => 'Starter Theme',
@@ -100,6 +100,7 @@ After installing IdeaSpaceVR, extract and copy the Starter Theme files into your
       ], /* content types */
 
     ];
+```
 
 The config.php file consists of two parts: 
 

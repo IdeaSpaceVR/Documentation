@@ -72,8 +72,16 @@ article p {
   font-size: 15px;
 }
 
+article pre {
+	padding: 0;
+}
+
 article pre code {
-  font-size: 10px;
+  font-size: 15px;
+  white-space: pre;
+  overflow-x: auto;
+  display: inline-block;
+  min-width: 100%;
 }
 
 .sidebar > ul > li {
@@ -103,4 +111,5 @@ article pre code {
   text-decoration: none;
   color: #0080e5;
 }
+
 
