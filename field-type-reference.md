@@ -187,6 +187,9 @@ Renders as an image upload button. It opens the Assets dialog window in order to
 <tr>
   <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>yes</td>
 </tr>
+<tr>
+  <td>#content-preview-image</td><td>true or false. Rendered as thumbnail image in content overview lists.</td><td>String</td><td>yes</td>
+</tr>
 </tbody>
 </table>
 
@@ -262,6 +265,9 @@ Renders as an photo sphere upload button. It opens the Assets dialog window in o
 </tr>
 <tr>
   <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>yes</td>
+</tr>
+<tr>
+  <td>#content-preview-image</td><td>true or false. Rendered as thumbnail image in content overview lists.</td><td>String</td><td>yes</td>
 </tr>
 </tbody>
 </table>
