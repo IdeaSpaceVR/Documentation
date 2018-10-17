@@ -16,7 +16,7 @@ Make sure your server meets the following requirements:
 * Tokenizer PHP Extension
 * GD Library or ImageMagick PHP Extension
 * MySQL database (or MariaDB / Postgres)
-* Apache web server (or NGINX) with mod_rewrite module enabled
+* Apache web server (or NGINX) with <a href="https://forum.ideaspacevr.org/topic/72/enable-nice-urls-mod_rewrite-for-apache-web-server" target="_blank">mod_rewrite module enabled (see instructions here)</a>
 * HTTPS protocol
 
 >Using the HTTPS protocol is strongly recommended. In fact, it is needed if you want to use WebVR in a web browser. 
