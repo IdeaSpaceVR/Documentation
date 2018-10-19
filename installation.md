@@ -15,7 +15,7 @@ Make sure your server meets the following requirements:
 * Mbstring PHP Extension
 * Tokenizer PHP Extension
 * GD Library or ImageMagick PHP Extension
-* MySQL database (or MariaDB / Postgres)
+* MySQL / MariaDB / PostgreSQL database
 * Apache web server (or NGINX) with <a href="https://forum.ideaspacevr.org/topic/72/enable-nice-urls-mod_rewrite-for-apache-web-server" target="_blank">mod_rewrite module enabled (see instructions here)</a>
 * HTTPS protocol
 
