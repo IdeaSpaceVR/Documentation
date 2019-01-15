@@ -56,7 +56,7 @@ Renders as a HTML text input field. If the `#contentformat` is `html/text`, sele
 </tbody>
 </table>
 
-`config.php` example:
+Example `config.php`:
 
 ```
     return [
@@ -169,7 +169,7 @@ Renders as a HTML text area. If the `#contentformat` is `html/text`, selected te
 </tbody>
 </table>
 
-`config.php` example:
+Example `config.php`:
 
 ```
     return [
@@ -280,7 +280,7 @@ Renders as an image upload button. It opens the Assets dialog window in order to
 </tbody>
 </table>
 
-`config.php` example:
+Example `config.php`:
 
 ```
     return [
@@ -402,7 +402,7 @@ Renders as an photo sphere upload button. It opens the Assets dialog window in o
 </tbody>
 </table>
 
-`config.php` example:
+Example `config.php`:
 
 ```
     return [
@@ -521,6 +521,48 @@ Renders as an audio file upload button. It opens the Assets dialog window in ord
 </tbody>
 </table>
 
+Example `config.php`:
+
+```
+    return [
+
+      '#theme-name' => 'Example Theme',
+      '#theme-key' => 'example-theme',
+      '#theme-version' => '1.0',
+      '#ideaspace-version' => '>=1.2.0',
+      '#theme-description' => 'Example.',
+      '#theme-author-name' => 'IdeaSpaceVR',
+      '#theme-author-email' => 'info@ideaspacevr.org',
+      '#theme-homepage' => 'https://www.ideaspacevr.org/themes',
+      '#theme-keywords' => 'example, simple',
+      '#theme-view' => 'scene',
+
+      '#content-types' => [
+
+        'my-content-type' => [
+          '#label' => 'My Content Type',
+          '#description' => 'Some description text.',
+          '#max-values' => 'infinite',
+          '#fields' => [
+
+            'my-audio' => [
+              '#label' => 'My Audio',
+              '#description' => 'Choose an audio file.',
+              '#help' => 'Choose an audio file.',
+              '#type' => 'audio',
+              '#file-extension' => ['mp3', 'wav'],
+              '#required' => true,
+            ],
+
+          ], /* fields */
+
+        ], /* messages */
+
+      ], /* content types */
+
+    ];
+```
+
 Audio array keys for accessing content in a View Template (for example: `scene.blade.php`):
  
 <table class="table table-bordered">
@@ -593,6 +635,48 @@ Renders as a video file upload button. It opens the Assets dialog window in orde
 </tr>
 </tbody>
 </table>
+
+Example `config.php`:
+
+```
+    return [
+
+      '#theme-name' => 'Example Theme',
+      '#theme-key' => 'example-theme',
+      '#theme-version' => '1.0',
+      '#ideaspace-version' => '>=1.2.0',
+      '#theme-description' => 'Example.',
+      '#theme-author-name' => 'IdeaSpaceVR',
+      '#theme-author-email' => 'info@ideaspacevr.org',
+      '#theme-homepage' => 'https://www.ideaspacevr.org/themes',
+      '#theme-keywords' => 'example, simple',
+      '#theme-view' => 'scene',
+
+      '#content-types' => [
+
+        'my-content-type' => [
+          '#label' => 'My Content Type',
+          '#description' => 'Some description text.',
+          '#max-values' => 'infinite',
+          '#fields' => [
+
+            'my-video' => [
+              '#label' => 'My Video',
+              '#description' => 'Choose a video file.',
+              '#help' => 'Choose a video file.',
+              '#type' => 'video',
+              '#file-extension' => ['mp4'],
+              '#required' => true,
+            ],
+
+          ], /* fields */
+
+        ], /* messages */
+
+      ], /* content types */
+
+    ];
+```
 
 Video array keys for accessing content in a View Template (for example: `scene.blade.php`):
  
@@ -673,6 +757,48 @@ Renders as a video sphere file upload button. It opens the Assets dialog window 
 </tbody>
 </table>
 
+Example `config.php`:
+
+```
+    return [
+
+      '#theme-name' => 'Example Theme',
+      '#theme-key' => 'example-theme',
+      '#theme-version' => '1.0',
+      '#ideaspace-version' => '>=1.2.0',
+      '#theme-description' => 'Example.',
+      '#theme-author-name' => 'IdeaSpaceVR',
+      '#theme-author-email' => 'info@ideaspacevr.org',
+      '#theme-homepage' => 'https://www.ideaspacevr.org/themes',
+      '#theme-keywords' => 'example, simple',
+      '#theme-view' => 'scene',
+
+      '#content-types' => [
+
+        'my-content-type' => [
+          '#label' => 'My Content Type',
+          '#description' => 'Some description text.',
+          '#max-values' => 'infinite',
+          '#fields' => [
+
+            'my-videosphere' => [
+              '#label' => 'My Videosphere',
+              '#description' => 'Choose a 360 video file.',
+              '#help' => 'Choose a 360 video file.',
+              '#type' => 'videosphere',
+              '#file-extension' => ['mp4'],
+              '#required' => true,
+            ],
+
+          ], /* fields */
+
+        ], /* messages */
+
+      ], /* content types */
+
+    ];
+```
+
 Videosphere array keys for accessing content in a View Template (for example: `scene.blade.php`):
  
 <table class="table table-bordered">
@@ -752,6 +878,48 @@ Renders as an HTML color selector input field. Possible color settings for `conf
 </tbody>
 </table>
 
+Example `config.php`:
+
+```
+    return [
+
+      '#theme-name' => 'Example Theme',
+      '#theme-key' => 'example-theme',
+      '#theme-version' => '1.0',
+      '#ideaspace-version' => '>=1.2.0',
+      '#theme-description' => 'Example.',
+      '#theme-author-name' => 'IdeaSpaceVR',
+      '#theme-author-email' => 'info@ideaspacevr.org',
+      '#theme-homepage' => 'https://www.ideaspacevr.org/themes',
+      '#theme-keywords' => 'example, simple',
+      '#theme-view' => 'scene',
+
+      '#content-types' => [
+
+        'my-content-type' => [
+          '#label' => 'My Content Type',
+          '#description' => 'Some description text.',
+          '#max-values' => 'infinite',
+          '#fields' => [
+
+            'my-color' => [
+              '#label' => 'My Color',
+              '#description' => 'Choose a color.',
+              '#help' => 'Choose a color.',
+              '#type' => 'color',
+              '#default_value' => '#FFFFFF',
+              '#required' => true,
+            ],
+
+          ], /* fields */
+
+        ], /* messages */
+
+      ], /* content types */
+
+    ];
+```
+
 Color array keys for accessing content in a View Template (for example: `scene.blade.php`):
  
 <table class="table table-bordered">
@@ -812,6 +980,47 @@ Renders as an HTML date selector input field. Possible date settings for `config
 </tr>
 </tbody>
 </table>
+
+Example `config.php`:
+
+```
+    return [
+
+      '#theme-name' => 'Example Theme',
+      '#theme-key' => 'example-theme',
+      '#theme-version' => '1.0',
+      '#ideaspace-version' => '>=1.2.0',
+      '#theme-description' => 'Example.',
+      '#theme-author-name' => 'IdeaSpaceVR',
+      '#theme-author-email' => 'info@ideaspacevr.org',
+      '#theme-homepage' => 'https://www.ideaspacevr.org/themes',
+      '#theme-keywords' => 'example, simple',
+      '#theme-view' => 'scene',
+
+      '#content-types' => [
+
+        'my-content-type' => [
+          '#label' => 'My Content Type',
+          '#description' => 'Some description text.',
+          '#max-values' => 'infinite',
+          '#fields' => [
+
+            'my-date' => [
+              '#label' => 'My Date',
+              '#description' => 'Choose a date.',
+              '#help' => 'Choose a date.',
+              '#type' => 'date',
+              '#required' => true,
+            ],
+
+          ], /* fields */
+
+        ], /* messages */
+
+      ], /* content types */
+
+    ];
+```
 
 Date array keys for accessing content in a View Template (for example: `scene.blade.php`):
  
@@ -880,6 +1089,48 @@ Renders as an HTML select input field. Possible options select settings for `con
 </tbody>
 </table>
 
+Example `config.php`:
+
+```
+    return [
+
+      '#theme-name' => 'Example Theme',
+      '#theme-key' => 'example-theme',
+      '#theme-version' => '1.0',
+      '#ideaspace-version' => '>=1.2.0',
+      '#theme-description' => 'Example.',
+      '#theme-author-name' => 'IdeaSpaceVR',
+      '#theme-author-email' => 'info@ideaspacevr.org',
+      '#theme-homepage' => 'https://www.ideaspacevr.org/themes',
+      '#theme-keywords' => 'example, simple',
+      '#theme-view' => 'scene',
+
+      '#content-types' => [
+
+        'my-content-type' => [
+          '#label' => 'My Content Type',
+          '#description' => 'Some description text.',
+          '#max-values' => 'infinite',
+          '#fields' => [
+
+            'my-options' => [
+              '#label' => 'My Options',
+              '#description' => 'Choose an option.',
+              '#help' => 'Choose a option.',
+              '#type' => 'options-select',
+              '#options' => ['red' => 'Red Bike', 'green' => 'Green Bike', 'blue' => 'Blue Bike'],
+              '#required' => true,
+            ],
+
+          ], /* fields */
+
+        ], /* messages */
+
+      ], /* content types */
+
+    ];
+```
+
 Options Select array keys for accessing content in a View Template (for example: `scene.blade.php`):
  
 <table class="table table-bordered">
@@ -936,13 +1187,55 @@ Renders as a 3D model upload button. It opens the Assets dialog window in order 
   <td>#required</td><td>true or false</td><td>Boolean</td><td>yes</td>
 </tr>
 <tr>
-  <td>#file-extension</td><td>['obj', 'ply', 'dae']</td><td>Array</td><td>yes</td>
+  <td>#file-extension</td><td>['glb', 'gltf', 'obj', 'ply', 'dae']</td><td>Array</td><td>yes</td>
 </tr>
 <tr>
   <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>yes</td>
 </tr>
 </tbody>
 </table>
+
+Example `config.php`:
+
+```
+    return [
+
+      '#theme-name' => 'Example Theme',
+      '#theme-key' => 'example-theme',
+      '#theme-version' => '1.0',
+      '#ideaspace-version' => '>=1.2.0',
+      '#theme-description' => 'Example.',
+      '#theme-author-name' => 'IdeaSpaceVR',
+      '#theme-author-email' => 'info@ideaspacevr.org',
+      '#theme-homepage' => 'https://www.ideaspacevr.org/themes',
+      '#theme-keywords' => 'example, simple',
+      '#theme-view' => 'scene',
+
+      '#content-types' => [
+
+        'my-content-type' => [
+          '#label' => 'My Content Type',
+          '#description' => 'Some description text.',
+          '#max-values' => 'infinite',
+          '#fields' => [
+
+            'my-model' => [
+              '#label' => 'My Model',
+              '#description' => 'Upload a model.',
+              '#help' => 'Upload a model.',
+              '#type' => 'model3d',
+							'#file-extension' => ['obj', 'ply', 'dae', 'glb', 'gltf'],
+              '#required' => true,
+            ],
+
+          ], /* fields */
+
+        ], /* messages */
+
+      ], /* content types */
+
+    ];
+```
 
 3D Model array keys for accessing content in a View Template (for example: `scene.blade.php`):
  
@@ -1038,6 +1331,50 @@ Renders as a button. It opens a dialog window in order to position, attach and d
 
 `#field-reference` specifies WHERE content items should be positioned and attached. The field name must exist in your theme (in `config.php` file) and within the same content type as the `position` field is in use. Examples for field references are: photo-sphere, video-sphere, 3d-model, etc. `#field-reference` is optional. If it is not specified, a grid is shown instead. 
 
+Example `config.php`:
+
+```
+    return [
+
+      '#theme-name' => 'Example Theme',
+      '#theme-key' => 'example-theme',
+      '#theme-version' => '1.0',
+      '#ideaspace-version' => '>=1.2.0',
+      '#theme-description' => 'Example.',
+      '#theme-author-name' => 'IdeaSpaceVR',
+      '#theme-author-email' => 'info@ideaspacevr.org',
+      '#theme-homepage' => 'https://www.ideaspacevr.org/themes',
+      '#theme-keywords' => 'example, simple',
+      '#theme-view' => 'scene',
+
+      '#content-types' => [
+
+        'my-content-type' => [
+          '#label' => 'My Content Type',
+          '#description' => 'Some description text.',
+          '#max-values' => 'infinite',
+          '#fields' => [
+
+            'my-position' => [
+              '#label' => 'My Position',
+              '#description' => 'Position the model.',
+              '#help' => 'Position the model.',
+              '#type' => 'position',
+              '#maxnumber' => 'infinite',
+              '#required' => true,
+              '#content-type-reference' => 'model3d',
+              '#field-reference' => 'my-model',
+            ],
+
+          ], /* fields */
+
+        ], /* messages */
+
+      ], /* content types */
+
+    ];
+```
+
 
 Position array keys for accessing content in a View Template (for example: `scene.blade.php`):
  
@@ -1127,6 +1464,49 @@ Renders as a button. It opens a dialog window in order to rotate content items (
 
 `#field-reference` specifies the field name on which to enable the setting of a rotation. The field name must exist in your theme (in `config.php` file) and within the same content type as the `rotation` field is in use. Supported field types are: `video`, `videosphere`, `photosphere`, `image`, `model3d`.
 
+Example `config.php`:
+
+```
+    return [
+
+      '#theme-name' => 'Example Theme',
+      '#theme-key' => 'example-theme',
+      '#theme-version' => '1.0',
+      '#ideaspace-version' => '>=1.2.0',
+      '#theme-description' => 'Example.',
+      '#theme-author-name' => 'IdeaSpaceVR',
+      '#theme-author-email' => 'info@ideaspacevr.org',
+      '#theme-homepage' => 'https://www.ideaspacevr.org/themes',
+      '#theme-keywords' => 'example, simple',
+      '#theme-view' => 'scene',
+
+      '#content-types' => [
+
+        'my-content-type' => [
+          '#label' => 'My Content Type',
+          '#description' => 'Some description text.',
+          '#max-values' => 'infinite',
+          '#fields' => [
+
+            'my-rotation' => [
+              '#label' => 'My Rotation',
+              '#description' => 'Rotate the model.',
+              '#help' => 'Rotate the model.',
+              '#type' => 'rotation',
+              '#maxnumber' => 'infinite',
+              '#required' => true,
+              '#field-reference' => 'my-model',
+            ],
+
+          ], /* fields */
+
+        ], /* messages */
+
+      ], /* content types */
+
+    ];
+```
+
 
 Rotation array keys for accessing content in a View Template (for example: `scene.blade.php`):
  
@@ -1190,6 +1570,48 @@ Renders as an HTML select input field. Possible space reference settings for `co
 </tr>
 </tbody>
 </table>
+
+Example `config.php`:
+
+```
+    return [
+
+      '#theme-name' => 'Example Theme',
+      '#theme-key' => 'example-theme',
+      '#theme-version' => '1.0',
+      '#ideaspace-version' => '>=1.2.0',
+      '#theme-description' => 'Example.',
+      '#theme-author-name' => 'IdeaSpaceVR',
+      '#theme-author-email' => 'info@ideaspacevr.org',
+      '#theme-homepage' => 'https://www.ideaspacevr.org/themes',
+      '#theme-keywords' => 'example, simple',
+      '#theme-view' => 'scene',
+
+      '#content-types' => [
+
+        'my-content-type' => [
+          '#label' => 'My Content Type',
+          '#description' => 'Some description text.',
+          '#max-values' => 'infinite',
+          '#fields' => [
+
+            'my-space-ref' => [
+              '#label' => 'My Space Reference',
+              '#description' => 'Select a space.',
+              '#help' => 'Select a space.',
+              '#type' => 'space-reference',
+              '#required' => true,
+              '#published' => true,
+            ],
+
+          ], /* fields */
+
+        ], /* messages */
+
+      ], /* content types */
+
+    ];
+```
 
 Space Reference array keys for accessing content in a View Template (for example: `scene.blade.php`):
  
