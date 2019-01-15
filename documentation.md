@@ -12,10 +12,12 @@
     - [Building a Basic VR Theme](/documentation/{{version}}/building-basic-vr-theme) 
     - [Content Types and Field Types](/documentation/{{version}}/content-types-and-field-types) 
     - [Field Type Reference](/documentation/{{version}}/field-type-reference) 
+    - [Field Group Reference](/documentation/{{version}}/field-group-reference) 
     - [View Template Variables (incl. JS / JSON)](/documentation/{{version}}/view-template-variables) 
     - [Theme Configuration File](/documentation/{{version}}/theme-configuration-file) 
     - [Events](/documentation/{{version}}/events) 
 - Misc
+    - [FAQ](/documentation/{{version}}/faq)
     - [Contributions](/documentation/{{version}}/contributions)
     - [License](/documentation/{{version}}/license)
     - <a href="https://webvr.info">https://webvr.info</a>
