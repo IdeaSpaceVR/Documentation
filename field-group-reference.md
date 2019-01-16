@@ -10,7 +10,7 @@ Field groups allow you to organize fields into groups which are rendered as coll
 </thead>
 <tbody>
 <tr>
-  <td>#field-groups</td><td>['key1' => 'Title 1', 'key2' => 'Title 2']</td><td>Key-value pairs</td><td>no</td>
+  <td>#field-groups</td><td>['key1' => ['title' => 'Title 1', 'help' => 'This is some help text.'], 'key2' => ['title' => 'Title 2', 'help' => 'This is another help text.']]</td><td>Key-value pairs</td><td>no</td>
 </tr>
 <tr>
   <td>#field-group</td><td>'key1'</td><td>String</td><td>no</td>
@@ -41,7 +41,16 @@ Example `config.php` with two field-groups:
 					'#description' => 'Manage your blog posts.',
 					'#max-values' => 'infinite',
 
-					'#field-groups' => ['north' => 'North', 'south' => 'South'],
+					'#field-groups' => [
+							'north' => [
+									'title' => 'North',
+									'help' => 'Create content for direction North.'
+							], 
+							'south' => [
+									'title' => 'South',
+									'help' => 'Create content for direction South.'
+							]
+					],
 
 					'#fields' => [
 
