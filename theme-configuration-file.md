@@ -7,6 +7,7 @@ The theme configuration file `config.php` is central to a theme. It contains con
 - [General information about the theme](#general-information-theme)
 - [Content type and field configuration](#content-type-field-configuration)
 - [Example: IdeaSpace 360 theme](#example-ideaspace-360-theme)
+- [Internationalization (i18n)](#internationalization)
 
 
 <a name="general-information-theme"></a>
@@ -172,6 +173,121 @@ return [
 There are two content types defined: `text-notes` and `photo-spheres`. Text notes can be attached to photo spheres. The field `attach-text-notes` (part of content type `photo-spheres`) defines that items of the content type `text-notes` can be positioned and attached to photo spheres. 
 
 Take a look at <a href="content-types-and-field-types">Content Types and Field Types</a> which lists all available fields and types.
+
+
+
+<a name="internationalization"></a>
+### Internationalization of a theme
+
+Theme labels, description and help texts defined in the theme `config.php` file can be translated into other languages. In order to accomplish this we put all text in external language files inside the `lang` directory of the theme and we just use a unique key for each text in the `config.php` file. Each of these keys reference a text inside a language file. We have one language file per language, for example one for english, one for german or french.
+
+If you switch the language for your IdeaSpaceVR installation (in Settings), the theme translations are shown according to the selected language when creating or editing a space.
+
+
+#### `lang` directory structure 
+
+```
+lang/en/
+lang/de/
+lang/fr/
+etc.
+```
+
+Each language has its own directory within the `lang` directory. And each language has its own language files, for example:
+
+`lang/en/my_texts.php` or
+
+`lang/de/my_texts.php`
+
+
+#### Key example
+
+Keys reference texts in language files.
+
+`my_texts.text_notes`
+
+The first part of the key (`my_texts`) is the file name of the language file (in `lang/en/my_texts.php`). The second part of the key (`text_notes`) is the variable name in the language file.
+
+This is a `config.php` example using language keys:
+
+```
+return [
+
+  '#theme-name' => 'IdeaSpace 360',
+  '#theme-key' => 'ideaspace-360-photo-sphere-viewer',
+  '#theme-version' => '1.0',
+  '#ideaspace-version' => '>=1.0.0',
+  '#theme-description' => 'Photo sphere viewer with navigation menu in VR. Attach text annotations to your photo spheres.',
+  '#theme-author-name' => 'IdeaSpaceVR',
+  '#theme-author-email' => 'info@ideaspacevr.org',
+  '#theme-homepage' => 'https://www.ideaspacevr.org/themes',
+  '#theme-keywords' => 'photo sphere, gaze input navigation, mobile, 360, photography',
+  '#theme-view' => 'scene',
+
+  '#content-types' => [
+
+    'text-notes' => [
+      '#label' => 'my_texts.text_notes',
+      '#description' => 'my_texts.text_notes_description',
+      '#max-values' => 'infinite',
+      '#fields' => [
+
+        'note' => [
+          '#label' => 'my_texts.text_note',
+          '#description' => 'my_texts.enter_some_text',
+          '#help' => 'my_texts.text_note_help',
+          '#type' => 'textfield',
+          '#maxlength' => 140,
+          '#contentformat' => 'text',
+          '#required' => true,
+        ],
+
+      ], /* fields */
+
+    ], /* notes */
+
+	] /* content types */
+
+];
+```
+
+Let's look into the `lang/en/my_texts.php` language file:
+
+```
+<?php
+
+return [
+
+	'text_notes' => 'Text Notes',
+	'text_notes_description' => 'Manage your text notes which are attached to your photo spheres.',
+	'text_note' => 'Text Note',
+	'enter_some_text' => 'Enter some text.',
+	'text_note_help' => 'The text note can be attached to a photo sphere.',
+
+];
+```
+
+That's where the texts are referenced.
+
+If we wanted to have a german translation we would add a `lang/de/my_texts.php` file:
+
+```
+<?php
+
+return [
+
+  'text_notes' => 'Text Notizen',
+  'text_notes_description' => 'Organisiere deine Text Notizen fuer deine 360 Grad Fotos.',
+  'text_note' => 'Text Notiz',
+  'enter_some_text' => 'Schreibe einen Text.',
+  'text_note_help' => 'Die Text Notiz kann an einem 360 Grad Foto plaziert werden.',
+
+];
+```
+
+
+
+
 
 
 
