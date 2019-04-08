@@ -7,7 +7,7 @@ The theme configuration file `config.php` is central to a theme. It contains con
 - [General information about the theme](#general-information-theme)
 - [Content type and field configuration](#content-type-field-configuration)
 - [Example: IdeaSpace 360 theme](#example-ideaspace-360-theme)
-- [Internationalization (i18n)](#internationalization)
+- [Internationalization (i18n) of a theme](#internationalization)
 
 
 <a name="general-information-theme"></a>
@@ -177,9 +177,13 @@ Take a look at <a href="content-types-and-field-types">Content Types and Field T
 
 
 <a name="internationalization"></a>
-### Internationalization of a theme
+### Internationalization (i18n) of a theme
 
-Theme labels, description and help texts defined in the theme `config.php` file can be translated into other languages. In order to accomplish this we put all text in external language files inside the `lang` directory of the theme and we just use a unique key for each text in the `config.php` file. Each of these keys reference a text inside a language file. We have one language file per language, for example one for english, one for german or french.
+Theme labels, description and help texts defined in the theme `config.php` file or any text in a theme template can be translated into other languages. 
+
+First, let's focus how to internationalize the `config.php` file.  
+
+The first step is to put all text in external language files inside the `lang` directory of the theme and we just use a unique key for each text in the `config.php` file. Each of these keys reference a text inside a language file. We have one language file per language, for example one for english, one for german or french.
 
 If you switch the language for your IdeaSpaceVR installation (in Settings), the theme translations are shown according to the selected language when creating or editing a space.
 
@@ -285,8 +289,17 @@ return [
 ];
 ```
 
+#### Internationalization of text in theme template files 
 
+For example `views/index.blade.php` or `views/scene.blade.php`.
 
+Inside your template file you can use the following code to internationalize your text.
+
+Example:
+
+`{{ trans('image-gallery::description.intro_instruction') }}`
+
+`image-gallery` is the `#theme-key` from the `config.php` file and the reference of the text is `description.intro_instruction` (from `lang/description.php` with the key `intro_instruction`).
 
 
 
