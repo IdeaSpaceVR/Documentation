@@ -16,6 +16,7 @@ Use this reference for setting up your content type(s) and fields in your theme'
 - [Position](#position)
 - [Rotation](#rotation)
 - [Space Reference](#space-reference)
+- [Painter](#painter)
 
 
 
@@ -1646,4 +1647,89 @@ Space Reference array keys for accessing content in a View Template (for example
 Example:
 
 `$content['content-type-key'][0]['space-reference-key']['#space-title']`
+
+
+<a name="painter"></a>
+### Painter 
+
+Renders as a button which opens a dialog window containing a VR scene from this theme. When entering in VR mode, you have access to a tool to paint in this scene. Possible painter reference settings for `config.php`:
+
+<table class="table table-bordered">
+<thead>
+<tr>
+  <th>Setting</th><th>Value(s)</th><th>Value Type</th><th>Mandatory</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>#type</td><td>'painter'</td><td>String</td><td>yes</td>
+</tr>
+<tr>
+  <td>#label</td><td>'Write some text'</td><td>String</td><td>yes</td>
+</tr>
+<tr>
+  <td>#description</td><td>'Write some text'</td><td>String</td><td>yes</td>
+</tr>
+<tr>
+  <td>#required</td><td>true or false</td><td>Boolean</td><td>yes</td>
+</tr>
+<tr>
+  <td>#help</td><td>'Write some text'. Rendered as help text.</td><td>String</td><td>yes</td>
+</tr>
+<tr>
+  <td>#scene-template</td><td>Name of a view template which should embed the painter tool. Eg. 'scene-painter' - a scene without camera and laser-controls.</td><td>String</td><td>yes</td>
+</tr>
+</tbody>
+</table>
+
+Example `config.php`:
+
+```
+    return [
+
+      '#theme-name' => 'Example Theme',
+      '#theme-key' => 'example-theme',
+      '#theme-version' => '1.0',
+      '#ideaspace-version' => '>=1.2.0',
+      '#theme-description' => 'Example.',
+      '#theme-author-name' => 'IdeaSpaceVR',
+      '#theme-author-email' => 'info@ideaspacevr.org',
+      '#theme-homepage' => 'https://www.ideaspacevr.org/themes',
+      '#theme-keywords' => 'example, simple',
+      '#theme-view' => 'scene',
+
+      '#content-types' => [
+
+        'my-content-type' => [
+          '#label' => 'My Content Type',
+          '#description' => 'Some description text.',
+          '#max-values' => 'infinite',
+          '#fields' => [
+
+						'post-painter' => [
+							'#label' => 'Paint on post',
+							'#description' => 'Create a painting in your blog post',
+							'#help' => 'VR controllers with 6-DOF (degrees of freedom) are needed',
+							'#type' => 'painter',
+							'#scene-template' => 'scene-painter', /* scene without camera and laser-controls */
+							'#required' => false,
+        		],
+
+          ], /* fields */
+
+        ], /* messages */
+
+      ], /* content types */
+
+    ];
+```
+
+When creating the scene-template for painter, you have to include two statements in the template:
+
+- inside the `<a-assets>` tags you have to include `@php painter_assets(); @endphp`
+
+- after `<a-assets>` tags include this statement: @php painter_entities(); @endphp
+
+These statements are necessary to make painter work in your template.
+
 
