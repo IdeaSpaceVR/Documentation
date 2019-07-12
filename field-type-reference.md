@@ -1706,14 +1706,14 @@ Example `config.php`:
           '#max-values' => 'infinite',
           '#fields' => [
 
-						'post-painter' => [
-							'#label' => 'Paint on post',
-							'#description' => 'Create a painting in your blog post',
-							'#help' => 'VR controllers with 6-DOF (degrees of freedom) are needed',
-							'#type' => 'painter',
-							'#scene-template' => 'scene-painter', /* scene without camera and laser-controls */
-							'#required' => false,
-        		],
+            'post-painter' => [
+              '#label' => 'Paint on post',
+              '#description' => 'Create a painting in your blog post',
+              '#help' => 'VR controllers with 6-DOF (degrees of freedom) are needed',
+              '#type' => 'painter',
+              '#scene-template' => 'scene-painter', /* scene without camera and laser-controls */
+              '#required' => false,
+            ],
 
           ], /* fields */
 
